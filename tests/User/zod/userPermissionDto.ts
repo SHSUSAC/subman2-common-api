@@ -13,12 +13,14 @@ test("Schema accepts allowed patterns", () => {
 
 			expect(permissionDto.UID).not.toBeUndefined();
 
-			const permissionLevel = permissionLevelSchema.parse(permissionDto.Equipment);
-			if(permissionLevel) {
-				expect(permissionLevel).toMatch(permissionLevelRegex);
-			}
-			else {
-				expect(permissionLevel).toBe(null);
+			if(permissionDto.Equipment) {
+				const permissionLevel = permissionLevelSchema.parse(permissionDto.Equipment);
+				if(permissionLevel) {
+					expect(permissionLevel).toMatch(permissionLevelRegex);
+				}
+				else {
+					expect(permissionLevel).toBe(null);
+				}
 			}
 		})
 	)
