@@ -6,6 +6,8 @@ name: Create release on merge
     paths-ignore:
       - "package.json"
       - "CHANGELOG.md"
+      - "README.md"
+      - "LICENSE.md"
 jobs:
   build_release:
     permissions:
