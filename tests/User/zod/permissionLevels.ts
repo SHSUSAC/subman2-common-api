@@ -21,6 +21,11 @@ test("Schema accepts allowed patterns", () => {
 	)
 });
 
+test("Schema allows nulls", () => {
+	const result = permissionLevelSchema.safeParse(null);
+	expect(result.success).toBe(true);
+});
+
 test("Schema rejects undefined", () => {
 	const result = permissionLevelSchema.safeParse(undefined);
 	expect(result.success).toBe(false);

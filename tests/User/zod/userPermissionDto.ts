@@ -26,18 +26,13 @@ test("Schema accepts allowed patterns", () => {
 	)
 });
 
-test("Schema rejects non-UUID id values", ()=> {
-	assert(
-		property(asciiString(), id => {
-			const permissionDto: UserPermissionsDTO = {
-				UID: id,
-				Equipment: null
-			}
-
-			const result = userPermissionsDTOSchema.safeParse(permissionDto);
-			expect(result.success).toBe(false);
-		})
-	)
+test("Schema rejects missing id values", ()=> {
+	const permissionDto: UserPermissionsDTO = {
+		UID: "",
+		Equipment: null
+	}
+	const result = userPermissionsDTOSchema.safeParse(permissionDto);
+	expect(result.success).toBe(false);
 });
 
 test("Child validator rejects invalid values", () => {

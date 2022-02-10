@@ -6,6 +6,6 @@ export const permissionLevelSchema = z
 	.nullable();
 
 export const userPermissionsDTOSchema = z.object({
-	UID: z.string().uuid(),
+	UID: z.string().min(1),
 	Equipment: permissionLevelSchema.optional(),
 });
