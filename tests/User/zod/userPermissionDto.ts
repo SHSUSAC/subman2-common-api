@@ -28,8 +28,7 @@ test("Schema accepts allowed patterns", () => {
 
 test("Schema rejects missing id values", ()=> {
 	const permissionDto: UserPermissionsDTO = {
-		UID: "",
-		Equipment: null
+		UID: ""
 	}
 	const result = userPermissionsDTOSchema.safeParse(permissionDto);
 	expect(result.success).toBe(false);
@@ -37,10 +36,14 @@ test("Schema rejects missing id values", ()=> {
 
 test("Child validator rejects invalid values", () => {
 	assert(
-		property(uuid(), asciiString(), (id, equipmentLevel) => {
+		property(uuid(), asciiString(), asciiString(), (id, level1, level2) => {
 			const permissionDto = {
 				UID: id,
-				Equipment: equipmentLevel
+				Equipment: level1,
+				Calender: level2,
+				Chat: level1,
+				Storage: level2,
+				System: level1,
 			};
 
 			const result = userPermissionsDTOSchema.safeParse(permissionDto);
@@ -53,10 +56,14 @@ const permissionLevelArbitrary = ZodFastCheck().inputOf(permissionLevelSchema);
 
 test("Child validator accepts valid values", () => {
 	assert(
-		property(uuid(), permissionLevelArbitrary, (id, equipmentLevel) => {
+		property(uuid(), permissionLevelArbitrary, permissionLevelArbitrary, (id, equipmentLevel1, equipmentLevel2) => {
 			const permissionDto = {
 				UID: id,
-				Equipment: equipmentLevel
+				Equipment: equipmentLevel1,
+				Calender: equipmentLevel2,
+				Chat: equipmentLevel1,
+				Storage: equipmentLevel2,
+				System: equipmentLevel1,
 			};
 
 			const result = userPermissionsDTOSchema.safeParse(permissionDto);

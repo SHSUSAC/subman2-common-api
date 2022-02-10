@@ -8,4 +8,8 @@ export const permissionLevelSchema = z
 export const userPermissionsDTOSchema = z.object({
 	UID: z.string().min(1),
 	Equipment: permissionLevelSchema.optional(),
+	Calender: permissionLevelSchema.optional(),
+	Chat: permissionLevelSchema.optional(),
+	Storage: permissionLevelSchema.optional(),
+	System: permissionLevelSchema.optional(),
 });

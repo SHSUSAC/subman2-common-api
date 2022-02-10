@@ -6,4 +6,8 @@ export type PermissionLevel = "reader" | "writer" | "admin" | null;
 export type UserPermissionsDTO = {
 	UID: string;
 	Equipment?: PermissionLevel;
+	Calender?: PermissionLevel;
+	Chat?: PermissionLevel;
+	Storage?: PermissionLevel;
+	System?: PermissionLevel;
 }
