@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/SHSUSAC/subman2-common-api/compare/v1.0.1...v1.1.0) (2022-02-10)
+
+
+### Features
+
+* Add additional roles to DTO ([03789c2](https://github.com/SHSUSAC/subman2-common-api/commit/03789c2ec4bdcf4196dc3b15e8f8600825d6ed66))
+
 ## [1.0.1](https://github.com/SHSUSAC/subman2-common-api/compare/v1.0.0...v1.0.1) (2022-02-10)
 
 
