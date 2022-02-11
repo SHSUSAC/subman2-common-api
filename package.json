@@ -33,7 +33,16 @@
   "dependencies": {
     "zod": "3.11.6"
   },
+  "jest-junit": {
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
+  },
   "jest": {
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
