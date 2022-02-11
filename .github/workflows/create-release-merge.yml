@@ -12,6 +12,8 @@ jobs:
   build_release:
     permissions:
       packages: write
+      contents: read
+      checks: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
