@@ -4,7 +4,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "outDir": "lib",
-    "rootDir": ".",
+    "rootDirs": ["src", "tests"],
     "sourceMap": true,
     "strict": true,
     "target": "es2015",
@@ -13,5 +13,8 @@
   "compileOnSave": true,
   "include": [
     "src"
+  ],
+  "exclude": [
+    "tests"
   ]
 }
