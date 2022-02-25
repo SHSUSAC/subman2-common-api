@@ -5,11 +5,19 @@ export const permissionLevelSchema = z
 	.union([z.literal("reader"), z.literal("writer"), z.literal("admin")])
 	.nullable();
 
-export const userPermissionsDTOSchema = z.object({
-	UID: z.string().min(1),
+export const userPermissionsSchema = z.object({
 	Equipment: permissionLevelSchema.optional(),
 	Calender: permissionLevelSchema.optional(),
 	Chat: permissionLevelSchema.optional(),
 	Storage: permissionLevelSchema.optional(),
 	System: permissionLevelSchema.optional(),
 });
+
+export const userPermissionModificationDTOSchema =z.object({
+	UID: z.string().min(1)
+}).extend(userPermissionsSchema.shape);
+
+export const essentialUserInformationSchema = z.object({
+	UID: z.string().min(1),
+	DisplayName: z.string().min(1)
+}).extend(userPermissionsSchema.shape);

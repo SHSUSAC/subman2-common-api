@@ -1,15 +1,15 @@
 // Create an arbitrary which generates valid inputs for the schema
-import {permissionLevelSchema, UserPermissionsDTO, userPermissionsDTOSchema} from "../../../src";
+import {permissionLevelSchema, userPermissionModificationDTOSchema, UserPermissionModificationDTO} from "../../../src";
 import {ZodFastCheck} from "zod-fast-check";
 import {asciiString, assert, property, uuid} from "fast-check";
 import {permissionLevelRegex} from "./permissionLevels";
 
-const permissionDtoArbitrary = ZodFastCheck().inputOf(userPermissionsDTOSchema);
+const permissionDtoArbitrary = ZodFastCheck().inputOf(userPermissionModificationDTOSchema);
 
 test("Schema accepts allowed patterns", () => {
 	assert(
 		property(permissionDtoArbitrary, (_permissionDto) => {
-			const permissionDto = userPermissionsDTOSchema.parse(_permissionDto);
+			const permissionDto = userPermissionModificationDTOSchema.parse(_permissionDto);
 
 			expect(permissionDto.UID).not.toBeUndefined();
 
@@ -23,14 +23,14 @@ test("Schema accepts allowed patterns", () => {
 				}
 			}
 		})
-	)
+	);
 });
 
 test("Schema rejects missing id values", ()=> {
-	const permissionDto: UserPermissionsDTO = {
+	const permissionDto: UserPermissionModificationDTO = {
 		UID: ""
-	}
-	const result = userPermissionsDTOSchema.safeParse(permissionDto);
+	};
+	const result = userPermissionModificationDTOSchema.safeParse(permissionDto);
 	expect(result.success).toBe(false);
 });
 
@@ -46,7 +46,7 @@ test("Child validator rejects invalid values", () => {
 				System: level1,
 			};
 
-			const result = userPermissionsDTOSchema.safeParse(permissionDto);
+			const result = userPermissionModificationDTOSchema.safeParse(permissionDto);
 			expect(result.success).toBe(false);
 		})
 	);
@@ -66,7 +66,7 @@ test("Child validator accepts valid values", () => {
 				System: equipmentLevel1,
 			};
 
-			const result = userPermissionsDTOSchema.safeParse(permissionDto);
+			const result = userPermissionModificationDTOSchema.safeParse(permissionDto);
 			expect(result.success).toBe(true);
 
 			const permissionLevel = permissionLevelSchema.parse(permissionDto.Equipment);
