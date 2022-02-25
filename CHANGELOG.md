@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [2.0.1](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.0...v2.0.1) (2022-02-25)
+
+
+### Bug Fixes
+
+* fix build bug caused by incorrect root directories ([7548689](https://github.com/SHSUSAC/subman2-common-api/commit/75486894063c6a08dce7751bc7824037465198a3))
+
 # [2.0.0](https://github.com/SHSUSAC/subman2-common-api/compare/v1.1.1...v2.0.0) (2022-02-25)
 
 
