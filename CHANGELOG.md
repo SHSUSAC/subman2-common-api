@@ -1,5 +1,15 @@
 # Semantic Versioning Changelog
 
+# [2.0.0](https://github.com/SHSUSAC/subman2-common-api/compare/v1.1.1...v2.0.0) (2022-02-25)
+
+
+* feat(DTO)!: added new permission and user types ([7a48860](https://github.com/SHSUSAC/subman2-common-api/commit/7a48860f2eb39072eec2c0d8ec726d1fe9b3d662))
+
+
+### BREAKING CHANGES
+
+* The UserPermissionsDTO has been broken up, UserPermissionModificationDTO is used instead. The structure of the DTO remains unchanged just the naming.
+
 ## [1.1.1](https://github.com/SHSUSAC/subman2-common-api/compare/v1.1.0...v1.1.1) (2022-02-12)
 
 # [1.1.0](https://github.com/SHSUSAC/subman2-common-api/compare/v1.0.1...v1.1.0) (2022-02-10)
