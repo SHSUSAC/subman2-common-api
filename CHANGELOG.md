@@ -1,5 +1,7 @@
 # Semantic Versioning Changelog
 
+## [2.0.8](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.7...v2.0.8) (2022-07-07)
+
 ## [2.0.7](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.6...v2.0.7) (2022-07-07)
 
 ## [2.0.6](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.5...v2.0.6) (2022-07-06)
