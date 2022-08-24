@@ -1232,7 +1232,7 @@ __metadata:
     semantic-release: 19.0.3
     ts-jest: 27.1.3
     typescript: 4.5.5
-    zod: 3.11.6
+    zod: 3.18.0
     zod-fast-check: 0.5.0
   languageName: unknown
   linkType: soft
@@ -7494,9 +7494,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:3.11.6":
-  version: 3.11.6
-  resolution: "zod@npm:3.11.6"
-  checksum: 044ac416450f179a0c88240f27849d2886c777cebade42df10e5f04125b0265cec82d9bd741a7dcb11796b2ea88b32c86be7d36932a4bed6af57002560359db1
+"zod@npm:3.18.0":
+  version: 3.18.0
+  resolution: "zod@npm:3.18.0"
+  checksum: 86a9a9928f4b40a07020d4b9832842fa4a70050c2d7bd1b2866bc1acfd734aa53a40f87a99a4312a637341a608b0105770c7a1f83b56df78e97691b4f5badcd8
   languageName: node
   linkType: hard

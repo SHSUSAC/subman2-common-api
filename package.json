@@ -33,7 +33,7 @@
     "zod-fast-check": "0.5.0"
   },
   "dependencies": {
-    "zod": "3.11.6"
+    "zod": "3.18.0"
   },
   "jest-junit": {
     "suiteNameTemplate": "{filepath}",
