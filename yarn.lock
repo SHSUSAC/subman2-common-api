@@ -1259,7 +1259,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 5.27.0
     "@typescript-eslint/parser": 5.27.0
     eslint: 8.35.0
-    fast-check: 2.23.2
+    fast-check: 2.25.0
     jest: 27.5.1
     jest-junit: 13.2.0
     semantic-release: 19.0.5
@@ -3023,12 +3023,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-check@npm:2.23.2":
-  version: 2.23.2
-  resolution: "fast-check@npm:2.23.2"
+"fast-check@npm:2.25.0":
+  version: 2.25.0
+  resolution: "fast-check@npm:2.25.0"
   dependencies:
     pure-rand: ^5.0.1
-  checksum: cfdc69b0b59e24cd4bf34ece386832976efe70c08d0906a743f7a333ef76f59f8dbc4914ad4e41d8a203de3251c298a111eb07dd55b8f614db135974d14f56c6
+  checksum: 77def3e214155618301c0f5a5e3b56da133b5d45896c631efece9de0428aa737cd6a660d085a52d8fff29a627d1d6065be1ec70d93385167fc25f10b3bb3c160
   languageName: node
   linkType: hard
 
