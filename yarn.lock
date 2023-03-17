@@ -1284,7 +1284,7 @@ __metadata:
     ts-jest: 27.1.5
     typescript: 4.5.5
     zod: 3.18.0
-    zod-fast-check: 0.5.0
+    zod-fast-check: 0.9.0
   languageName: unknown
   linkType: soft
 
@@ -7615,13 +7615,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod-fast-check@npm:0.5.0":
-  version: 0.5.0
-  resolution: "zod-fast-check@npm:0.5.0"
+"zod-fast-check@npm:0.9.0":
+  version: 0.9.0
+  resolution: "zod-fast-check@npm:0.9.0"
   peerDependencies:
-    fast-check: ^2.0.0
-    zod: ^3.5.0
-  checksum: 73460f73bb5d4183516c40779de0139317a22e3c1f484575fd88239fcdb38fec0a43f5b1d3bbc48d7da07a31c566db8cf64799e22dc35f50e32c56e969d4c45a
+    fast-check: ^2.23.0
+    zod: ^3.18.0
+  checksum: db09f806b9a101557a325e9e378b62071cd2e49f39f46c3e860912fecf992a93fcf664facad00c127c85c8cb3df92f436574365ae40265d7c548b673be279d25
   languageName: node
   linkType: hard
 
