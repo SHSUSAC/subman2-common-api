@@ -2,7 +2,7 @@
   "name": "@shsusac/subman2-common-api",
   "author": "Vespion Softworks",
   "license": "AGPL-3.0-only",
-  "version": "2.0.17",
+  "version": "2.0.18",
   "typings": "./lib/index.d.ts",
   "main": "./lib/index.js",
   "scripts": {
