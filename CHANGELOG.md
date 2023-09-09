@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [2.0.25](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.24...v2.0.25) (2023-09-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency zod to v3.22.2 ([#40](https://github.com/SHSUSAC/subman2-common-api/issues/40)) ([4b646c8](https://github.com/SHSUSAC/subman2-common-api/commit/4b646c81e71506b2c5c0d14eac40a14b4fe5d233))
+
 ## [2.0.24](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.23...v2.0.24) (2023-09-08)
 
 ## [2.0.23](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.22...v2.0.23) (2023-09-07)
