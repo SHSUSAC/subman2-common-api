@@ -1,5 +1,7 @@
 # Semantic Versioning Changelog
 
+## [2.0.27](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.26...v2.0.27) (2023-10-18)
+
 ## [2.0.26](https://github.com/SHSUSAC/subman2-common-api/compare/v2.0.25...v2.0.26) (2023-10-05)
 
 
