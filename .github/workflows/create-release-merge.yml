@@ -30,7 +30,7 @@ jobs:
 
       - name: Setup Node and Cached Dependencies
         if: ${{ !env.ACT }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "14"
           cache: "yarn"
